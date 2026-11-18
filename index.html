@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiDex — Catálogo de Digimon</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <a class="logo" href="./index.html">Digi<span>Dex</span></a>
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="./index.html" aria-current="page">Inicio</a>
+        <a href="./catalogo.html">Catálogo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Explorá el Mundo Digital</h1>
+        <p class="hero-texto">
+          Un catálogo de Digimon con sus imágenes y su nivel de evolución, con
+          datos que vienen en vivo de una API pública.
+        </p>
+        <a class="boton" href="./catalogo.html">Ver el catálogo</a>
+      </section>
+
+      <section class="descripcion">
+        <h2>¿Qué son los Digimon?</h2>
+        <p>
+          Los Digimon (<em>Digital Monsters</em>) son criaturas que viven en el
+          Mundo Digital, una red paralela a la nuestra. A diferencia de otras
+          franquicias, cada Digimon evoluciona en etapas: de Fresh e In Training
+          pasa a Rookie, después a Champion, Ultimate y finalmente Mega. En este
+          catálogo podés ver cada Digimon junto con el nivel en el que se
+          encuentra.
+        </p>
+      </section>
+
+      <section class="niveles" aria-labelledby="titulo-niveles">
+        <h2 id="titulo-niveles">Las etapas de evolución</h2>
+        <ol class="lista-niveles">
+          <li>In Training</li>
+          <li>Rookie</li>
+          <li>Champion</li>
+          <li>Ultimate</li>
+          <li>Mega</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p><strong>DigiDex</strong></p>
+      <p>
+        Datos:
+        <a href="https://digimon-api.vercel.app/" target="_blank" rel="noopener"
+          >Digimon API</a
+        >
+      </p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

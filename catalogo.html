@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo — DigiDex</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <a class="logo" href="./index.html">Digi<span>Dex</span></a>
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="./index.html">Inicio</a>
+        <a href="./catalogo.html" aria-current="page">Catálogo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro-catalogo">
+        <h1>Catálogo de Digimon</h1>
+        <p>Buscá por nombre o filtrá por nivel de evolución.</p>
+      </section>
+
+      <form class="controles" id="controles">
+        <div class="campo">
+          <label for="buscador">Buscar por nombre</label>
+          <input
+            type="search"
+            id="buscador"
+            placeholder="Ej.: Agumon"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="campo">
+          <label for="filtro-nivel">Filtrar por nivel</label>
+          <select id="filtro-nivel">
+            <option value="todos">Todos</option>
+          </select>
+        </div>
+      </form>
+
+      <p id="estado" class="estado" role="status"></p>
+
+      <section id="grilla" class="grilla" aria-label="Digimon"></section>
+    </main>
+
+    <footer class="pie">
+      <p><strong>DigiDex</strong></p>
+      <p>
+        Datos:
+        <a href="https://digimon-api.vercel.app/" target="_blank" rel="noopener"
+          >Digimon API</a
+        >
+      </p>
+    </footer>
+
+    <script type="module" src="./src/catalogo.js"></script>
+  </body>
+</html>
