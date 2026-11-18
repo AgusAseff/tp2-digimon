@@ -190,10 +190,12 @@ main {
 }
 
 .intro-catalogo h1 {
+  text-align: center;
   margin: 0 0 4px;
 }
 
 .intro-catalogo p {
+  text-align: center;
   margin: 0 0 20px;
   color: var(--color-texto-suave);
 }
