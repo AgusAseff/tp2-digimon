@@ -1,6 +1,6 @@
 import "./style.css";
 
-const apiUrl = "https://digimon-api.vercel.app/api/digimon";
+const apiUrl = "https://digimon-api.vercel.app/api/digimonx";
 
 let digimons = [];
 
@@ -17,7 +17,7 @@ async function digiApi() {
   try {
     const res = await fetch(apiUrl);
     if (!res.ok) {
-      throw new Error(`Error ${res.status} al buscar el digimon`);
+      throw new Error(`${res.status}`);
     }
 
     const datos = await res.json();
@@ -29,7 +29,8 @@ async function digiApi() {
     $estado.className = "estado";
   } catch (error) {
     console.error(error);
-    $estado.textContent = error;
+    $estado.textContent =
+      "No se pudieron cargar los Digimon. Revisá tu conexión y probá de nuevo.";
     $estado.className = "estado estado--error";
   }
 }
