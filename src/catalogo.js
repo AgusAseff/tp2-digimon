@@ -1,6 +1,6 @@
 import "./style.css";
 
-const apiUrl = "https://digimon-api.vercel.app/api/digimonx";
+const apiUrl = "https://digimon-api.vercel.app/api/digimon";
 
 let digimons = [];
 
